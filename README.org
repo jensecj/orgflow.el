@@ -1,0 +1,10 @@
+* orgflow
+what is orgflow?
+** rooting orgflow to a specific directory
+#+begin_src emacs-lisp
+;; use a specific directory by default
+(setq orgflow-dir "~/vault/org/")
+
+;; use the currents projects root directory by default
+(setq orgflow-dir (lambda () (project-root (project-current))))
+#+end_src
